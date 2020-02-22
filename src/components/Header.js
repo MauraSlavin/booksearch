@@ -3,10 +3,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div>
-        Header
-       
-    </div>
+    <h1 className="text-center">Google Books Search</h1>
   );
 }
 
