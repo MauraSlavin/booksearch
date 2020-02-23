@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const BookSchema = new Schema({
+const bookSchema = new Schema({
   // description of exercise
   title: {
     type: String,
@@ -10,7 +10,7 @@ const BookSchema = new Schema({
   },
   // units (weight, distance, etc.) or exercise
   authors: {
-    type: array[String]
+    type: [String]
   },
   // how many or how long (5 miles, 20 reps, etc.)
   description: {
@@ -24,6 +24,6 @@ const BookSchema = new Schema({
   }
 });
 
-const Book = mongoose.model("Book", BookSchema);
+const Book = mongoose.model("Book", bookSchema);
 
 module.exports = Book;
