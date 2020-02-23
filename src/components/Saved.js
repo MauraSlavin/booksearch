@@ -1,15 +1,13 @@
 import React from "react";
-import Book from "./Book.js"
+import BookList from "./BookList.js"
 
 
 function Saved() {
   return (
     <div className="row mx-2">
         <div className="col-12">
-            <h2>Saved Books</h2>
-            <Book />
-            <Book />
-            <Book />
+            <BookList
+                title="Saved Books" />
         </div>
     </div>
   );
